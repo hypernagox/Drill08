@@ -44,7 +44,7 @@ class Ball:
     def update(self):
         if self.stop:
             return
-        if self.y  - self.size <= 55:
+        if self.y  - self.size/2 <= 55:
            self.y = 55 + self.size /2
            self.stop = True
            return
